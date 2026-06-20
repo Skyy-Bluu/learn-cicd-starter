@@ -20,8 +20,6 @@ jobs:
 
       - name: Test auth
         run: go test ./... -cover
-<<<<<<< Updated upstream
-=======
 
   style:
     name: Style
@@ -37,4 +35,3 @@ jobs:
           
       - name: check Go formatting
         run: test -z $(go fmt ./...)
->>>>>>> Stashed changes
