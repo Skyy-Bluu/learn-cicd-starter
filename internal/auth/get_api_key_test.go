@@ -9,7 +9,7 @@ var token = "dXNlcm5hbWU6cGFzc3dvcmQ="
 
 func TestGetAPIKey(t *testing.T) {
 	h := http.Header{}
-	bearerToken := "ApiKe " + token
+	bearerToken := "ApiKey " + token
 	h.Add("Authorization", bearerToken)
 	apiKey, err := GetAPIKey(h)
 	if err != nil {
